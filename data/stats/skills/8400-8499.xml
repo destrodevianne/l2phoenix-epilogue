@@ -1,0 +1,14 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<skill id="8458" levels="1" name="Bracelet Weight Gauge Add" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases the weight gauge when a bracelet is equipped.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for />
+	</skill>
+</list>

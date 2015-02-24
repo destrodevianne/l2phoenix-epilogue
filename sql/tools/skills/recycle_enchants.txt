@@ -1,0 +1,9 @@
+update skills s
+left join skills s2 on s2.id = s.id and s2.level=1
+set s.reuse = s2.reuse
+where s2.reuse > 0 and s.reuse = 0;
+
+update skills s
+left join skills s2 on s2.id = s.id and s2.level=1
+set s.reuse = s2.reuse / (1+(s.level % 100)/30)
+where s.enchant like '%recycle%';

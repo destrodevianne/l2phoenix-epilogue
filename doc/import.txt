@@ -1,0 +1,67 @@
+# Импортирование недостающих строчек armor.sql из l2jfree
+INSERT INTO armor
+	SELECT
+		item_id,
+		name,
+		'' as additional_name,
+		bodypart,
+		crystallizable,
+		armor_type,
+		weight,
+		material,
+		crystal_type,
+		avoid_modify,
+		duration as durability,
+		p_def,
+		m_def,
+		mp_bonus,
+		price,
+		crystal_count,
+		sellable,
+		'' as icon,
+		'1' as dropable,
+		'1' as destroyable,
+		'1' as tradeable,
+		'' as skill_id,
+		'' as skill_level
+	FROM armor_l2jfree WHERE item_id NOT IN
+		(SELECT item_id FROM armor_l2p)
+
+# Импортирование недостающих строчек weapon.sql из l2jfree
+INSERT INTO weapon
+	SELECT
+		item_id,
+		name,
+		'' as additional_name,
+		bodypart,
+		crystallizable,
+		weight,
+		soulshots,
+		spiritshots,
+		material,
+		crystal_type,
+		p_dam,
+		rnd_dam,
+		weaponType,
+		critical,
+		hit_modify,
+		avoid_modify,
+		shield_def,
+		shield_def_rate,
+		atk_speed,
+		mp_consume,
+		m_dam,
+		duration as durability,
+		price,
+		crystal_count,
+		sellable,
+		'' as icon,
+		'1' as dropable,
+		'1' as destroyable,
+		'1' as tradeable,
+		'' as skill_id,
+		'' as skill_level,
+		0 as enchant4_skill_id,
+		0 as enchant4_skill_lvl
+	FROM weapon_l2jfree WHERE item_id NOT IN
+		(SELECT item_id FROM weapon_l2p)

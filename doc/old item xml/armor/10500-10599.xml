@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='10500' name="Mithril Shirt - HP">
+		<for>
+			<add val='28' order='0x10' stat='pDef' />
+			<add val='223' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10500;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10501' name="Mithril Shirt - MP">
+		<for>
+			<add val='28' order='0x10' stat='pDef' />
+			<add val='110' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10501;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10502' name="Mithril Shirt - CP">
+		<for>
+			<add val='28' order='0x10' stat='pDef' />
+			<add val='676' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10502;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10503' name="Striped Silk Shirt - HP">
+		<for>
+			<add val='19' order='0x10' stat='pDef' />
+			<add val='62' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10503;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10504' name="Striped Silk Shirt - MP">
+		<for>
+			<add val='19' order='0x10' stat='pDef' />
+			<add val='30' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10504;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10505' name="Striped Silk Shirt - CP">
+		<for>
+			<add val='19' order='0x10' stat='pDef' />
+			<add val='188' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10505;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10506' name="Thin Striped Leather Shirt - HP">
+		<for>
+			<add val='22' order='0x10' stat='pDef' />
+			<add val='93' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10506;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10507' name="Thin Striped Leather Shirt - MP">
+		<for>
+			<add val='22' order='0x10' stat='pDef' />
+			<add val='46' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10507;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10508' name="Thin Striped Leather Shirt - CP">
+		<for>
+			<add val='22' order='0x10' stat='pDef' />
+			<add val='282' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10508;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10509' name="Striped Scale Shirt - HP">
+		<for>
+			<add val='26' order='0x10' stat='pDef' />
+			<add val='186' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10509;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10510' name="Striped Scale Shirt - MP">
+		<for>
+			<add val='26' order='0x10' stat='pDef' />
+			<add val='92' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10510;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10511' name="Striped Scale Shirt - CP">
+		<for>
+			<add val='26' order='0x10' stat='pDef' />
+			<add val='564' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10511;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10533' name="'Blue Talisman - Attack Power">
+		<for>
+			<add val='5' order='0x60' stat='pAtk' />
+		</for>
+	</item>
+	<item id='10534' name="Blue Talisman - Shield Defense">
+		<for>
+			<add val='10' order='0x60' stat='sDef' />
+		</for>
+	</item>
+	<item id='10535' name="Yellow Talisman - Defense Power">
+		<for>
+			<add val='10' order='0x60' stat='pDef' />
+		</for>
+	</item>
+	<item id='10536' name="Yellow Talisman - Magic Power">
+		<for>
+			<add val='12' order='0x60' stat='mAtk' />
+		</for>
+	</item>
+	<item id='10537' name="Yellow Talisman - Evasion">
+		<for>
+			<add val='1' order='0x60' stat='rEvas' />
+		</for>
+	</item>
+	<item id='10538' name="Yellow Talisman - Healing Power">
+		<for>
+			<add val='5' order='0x60' stat='healPower' />
+		</for>
+	</item>
+	<item id='10539' name="Yellow Talisman - CP Recovery Rate">
+		<for>
+			<add val='1' order='0x60' stat='regCp' />
+		</for>
+	</item>
+	<item id='10540' name="Yellow Talisman - HP Recovery Rate">
+		<for>
+			<add val='1' order='0x60' stat='regHp' />
+		</for>
+	</item>
+	<item id='10541' name="Yellow Talisman - MP Recovery Rate">
+		<for>
+			<add val='1' order='0x60' stat='regMp' />
+		</for>
+	</item>
+	<item id='10542' name="Red Talisman - HP/CP Recovery">
+		<for>
+			<add val='1' order='0x60' stat='regHp' />
+			<add val='1' order='0x60' stat='regCp' />
+		</for>
+	</item>
+	<item id='10543' name="Yellow Talisman - Moving Speed">
+		<for>
+			<add val='3' order='0x60' stat='runSpd' />
+		</for>
+	</item>
+</list>

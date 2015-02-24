@@ -1,0 +1,154 @@
+#select round(avg(`hp`)) from npc where type = "L2Monster" and level <= 80 and hp <> 2444 group by `level`;
+
+update npc set level = 86 where type = "L2Guard";
+
+update npc set pdef = 0.066 * level * level + 1.2129 * level + 40.586  where type in ("L2Monster", "L2Minion", "L2Guard");
+update npc set mdef = 0.0549 * level * level + 1.1337 * level + 31.743  where type in ("L2Monster", "L2Minion", "L2Guard");
+update npc set patk = 0.00001 * level * level * level * level + 0.003 * level * level * level + 0.01 * level * level + 1.2 * level + 8 where type in ("L2Monster", "L2Minion", "L2Guard");
+update npc set matk = 0.0026 * level * level * level - 0.0248 * level * level + 0.1133 * level + 6.4115 where type in ("L2Monster", "L2Minion", "L2Guard");
+update npc set hp = 0.0164 * level * level * level - 0.0001 * level * level * level * level - 0.0524 * level * level + 20.905 * level + 33.974 where type in ("L2Monster", "L2Minion", "L2Guard");
+
+update npc set pdef = pdef * 4 where type = "L2Minion" and id in (select minion_id from minions where boss_id in (select id from npc_copy where type = "L2RaidBoss"));
+update npc set mdef = mdef * 4 where type = "L2Minion" and id in (select minion_id from minions where boss_id in (select id from npc_copy where type = "L2RaidBoss"));
+update npc set patk = patk * 4 where type = "L2Minion" and id in (select minion_id from minions where boss_id in (select id from npc_copy where type = "L2RaidBoss"));
+update npc set matk = matk * 4 where type = "L2Minion" and id in (select minion_id from minions where boss_id in (select id from npc_copy where type = "L2RaidBoss"));
+
+update npc set hp = hp * 4 where type = "L2Minion" and id in (select minion_id from minions where boss_id in (select id from npc_copy where type = "L2RaidBoss"));
+
+update npc set pdef = 4 * (0.066 * level * level + 1.2129 * level + 40.586)  where type = "L2RaidBoss";
+update npc set mdef = 4 * (0.0549 * level * level + 1.1337 * level + 31.743)  where type = "L2RaidBoss";
+
+update npc set pdef = 4 * (0.066 * level * level + 1.2129 * level + 40.586)  where type = "L2SiegeBoss";
+update npc set mdef = 4 * (0.0549 * level * level + 1.1337 * level + 31.743)  where type = "L2SiegeBoss";
+update npc set patk = 4 * (0.00001 * level * level * level * level + 0.003 * level * level * level + 0.01 * level * level + 1.2 * level + 8) where type = "L2SiegeBoss";
+update npc set matk = 4 * (0.0026 * level * level * level - 0.0248 * level * level + 0.1133 * level + 6.4115) where type = "L2SiegeBoss";
+
+update npc set pdef = 4 * (0.066 * level * level + 1.2129 * level + 40.586)  where type = "L2ReflectionBoss";
+update npc set mdef = 4 * (0.0549 * level * level + 1.1337 * level + 31.743)  where type = "L2ReflectionBoss";
+update npc set patk = (0.00001 * level * level * level * level + 0.003 * level * level * level + 0.01 * level * level + 1.2 * level + 8) where type = "L2ReflectionBoss";
+update npc set matk = (0.0026 * level * level * level - 0.0248 * level * level + 0.1133 * level + 6.4115) where type = "L2ReflectionBoss";
+
+update npc set pdef = pdef * 4, mdef = mdef * 4, patk = patk * 4, matk = matk * 4 where type = "L2Guard";
+
+# Fortress and Castle Dungeon boss
+update npc set pdef = pdef * 4, mdef = mdef * 4, patk = patk * 4, matk = matk * 4 where id >= 25546 and id <= 25595;
+
+update npc set pdef = pdef * 1.05 where type in ("L2Monster", "L2Minion");
+update npc set mdef = mdef * 1.05 where type in ("L2Monster", "L2Minion");
+update npc set patk = patk * 1.05 where type in ("L2Monster", "L2Minion");
+update npc set matk = matk * 1.05 where type in ("L2Monster", "L2Minion");
+
+update npc set pdef = pdef * 1.1 where type in ("L2Monster", "L2Minion") and level >= 76;
+update npc set mdef = mdef * 1.1 where type in ("L2Monster", "L2Minion") and level >= 76;
+update npc set patk = patk * 1.1 where type in ("L2Monster", "L2Minion") and level >= 76;
+update npc set matk = matk * 1.1 where type in ("L2Monster", "L2Minion") and level >= 76;
+
+update npc set pdef = pdef * 1.1 where type in ("L2Monster", "L2Minion") and level >= 80;
+update npc set mdef = mdef * 1.1 where type in ("L2Monster", "L2Minion") and level >= 80;
+update npc set patk = patk * 1.1 where type in ("L2Monster", "L2Minion") and level >= 80;
+update npc set matk = matk * 1.1 where type in ("L2Monster", "L2Minion") and level >= 80;
+
+update npc set pdef = pdef * 1.1 where type in ("L2Monster", "L2Minion") and level >= 83;
+update npc set mdef = mdef * 1.1 where type in ("L2Monster", "L2Minion") and level >= 83;
+update npc set patk = patk * 1.1 where type in ("L2Monster", "L2Minion") and level >= 83;
+update npc set matk = matk * 1.1 where type in ("L2Monster", "L2Minion") and level >= 83;
+
+-- в конце применять импорт hp/exp/sp с l2wh
+
+
+-- Дефолтные параметры
+
+update npc set `sex` = 'male' where `sex` = '';
+update npc set `type` = 'L2Npc' where `type` = '';
+update npc set `ai_type` = 'npc' where `ai_type` = '';
+
+update npc set `attackrange` = 40 where `attackrange` = 0;
+update npc set `hp` = 2444 where `hp` = 0;
+update npc set `mp` = 2444 where `mp` = 0;
+
+update npc set `base_hp_regen` = 7.500 where `base_hp_regen` = 0;
+update npc set `base_mp_regen` = 2.700 where `base_mp_regen` = 0;
+
+update npc set `str` = 40 where `str` = 0;
+update npc set `con` = 30 where `con` = 0;
+update npc set `dex` = 30 where `dex` = 0;
+update npc set `int` = 21 where `int` = 0;
+update npc set `wit` = 20 where `wit` = 0;
+update npc set `men` = 20 where `men` = 0;
+
+update npc set `patk` = 500 where `patk` = 0;
+update npc set `pdef` = 500 where `pdef` = 0;
+update npc set `matk` = 500 where `matk` = 0;
+update npc set `mdef` = 500 where `mdef` = 0;
+
+update npc set `atkspd` = 253 where `atkspd` = 0;
+update npc set `matkspd` = 500 where `matkspd` = 0;
+update npc set `walkspd` = 80 where `walkspd` = 0;
+update npc set `runspd` = 120 where `runspd` = 0;
+
+update npc set `corpse_time` = 7 where `corpse_time` = 0;
+update npc set `base_rand_dam` = 30 where `base_rand_dam` = 0;
+update npc set `base_critical` = 4 where `base_critical` = 0;
+update npc set `physical_hit_modify` = 4 where `physical_hit_modify` = 0;
+update npc set `hit_time_factor` = 0.6 where `hit_time_factor` = 0;
+
+update npc set con=30, men=20 where type not in (
+"L2SpecialMonster",
+"L2RaidBoss",
+"QueenAnt",
+"QueenAntLarva",
+"L2Boss",
+"Orfen",
+"Antharas",
+"L2ReflectionBoss",
+"L2SiegeBoss",
+"L2Commander"
+"L2Pet",
+);
+
+update npc set 
+	runspd = (select runspd from npc2 where id = npc.id) 
+where 
+(
+	runspd = '' or 
+	runspd is null or 
+	#runspd = 'NULL' or 
+	runspd = 0
+)
+and id not in
+(
+	select id from npc2 where 
+		runspd = '' or 
+		runspd is null or 
+		#runspd = 'NULL' or 
+		runspd = 0
+);
+
+Для импорта мобовских скиллов от SF:
+
+select distinct skillid, count(skillid) as count from npcskills_sf where 
+ npcid not in (select id from npc where type in ("L2Npc", "L2Pet")) and
+ skillid not in (select id from skills where operate_type = 12 or operate_type = 13) and 
+ skillid not in (select skillid from npcskills where npcid = npcskills_sf.npcid) and
+ skillid not in (4578) 
+group by skillid order by count desc
+
+insert into npcskills (select * from npcskills_sf where 
+ npcid not in (select id from npc where type in ("L2Npc", "L2Pet")) and
+ skillid not in (select id from skills where operate_type = 12 or operate_type = 13) and 
+ skillid not in (select skillid from npcskills where npcid = npcskills_sf.npcid) and
+ skillid not in (4578))
+
+исключения из общих правил:
+
+"L2SpecialMonster",
+"L2RaidBoss",
+"QueenAnt",
+"QueenAntLarva",
+"L2Boss",
+"Orfen",
+"Antharas",
+"L2ReflectionBoss",
+"L2SiegeBoss",
+"L2Commander",
+"L2Pet"

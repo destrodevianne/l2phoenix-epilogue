@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='7014' name="Monster Only (Shield of Dark Dragon)">
+		<for>
+			<add val='-8' order='0x10' stat='rEvas' />
+			<set val='230' order='0x08' stat='sDef' />
+			<add val='20' order='0x05' stat='rShld' />
+		</for>
+	</item>
+	<item id='7015' name="Shield of Castle Pledge">
+		<for>
+			<add val='-8' order='0x10' stat='rEvas' />
+			<set val='90' order='0x08' stat='sDef' />
+			<add val='20' order='0x05' stat='rShld' />
+		</for>
+	</item>
+	<item id='7058' name="Chrono Darbuka">
+		<for>
+			<set val='1' order='0x08' stat='pAtk' />
+			<set val='1' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+		</for>
+	</item>
+</list>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='5315' name="Sealed Shield of Nightmare">
+		<for>
+			<add val='-8' order='0x10' stat='rEvas' />
+			<set val='256' order='0x08' stat='sDef' />
+			<add val='20' order='0x05' stat='rShld' />
+		</for>
+	</item>
+</list>

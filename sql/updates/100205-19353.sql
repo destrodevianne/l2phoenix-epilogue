@@ -1,0 +1,1 @@
+ALTER TABLE `items`  DROP INDEX `item_id_count`,  ADD INDEX `item_id` (`item_id`);

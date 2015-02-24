@@ -1,0 +1,332 @@
+Справка по скиллам:
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Все теги должны открываться и закрываться.
+Теги, которые можно уместить в одну строку могут закрываться внутри себя.
+
+Пример:
+ <add .....> ..... </add>
+ <add ...../>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+формат xml-файлов:
+
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<skill id="1312" levels="1" name="Fishing">
+  <set name="weaponsAllowed" val="8192"/>
+  <set name="mpConsume" val="1"/>
+  <set name="reuseDelay" val="1000"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="FISHING"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <for>
+  </for>
+</skill>
+<skill id="1313" levels="27" name="Pumping">
+  <table name="#power"> 19 28 38 50 55 60 65 70 86 92 97 103 109 115 136 143 149 156 187 195 202 245 253 262 271 312 321 </table>
+  <set name="weaponsAllowed" val="8192"/>
+  <set name="mpConsume" val="2"/>
+  <set name="power" val="#power"/>
+  <set name="reuseDelay" val="2000"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="PUMPING"/>
+  <set name="operateType" val="OP_ACTIVE"/>
+  <for>
+  </for>
+</skill>
+</list>
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+1. <?xml version='1.0' encoding='utf-8'?>
+ Начало файла, заголовок
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+2. <list>
+ Начало списка скиллов, в конце файла нужно закрыть тегом </list>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+3. <skill id="1312" levels="1" name="Fishing">
+   Начало описания скилла. После всех тегов должно завершаться </skill>
+     skill id - уникальный id для всех скиллов (и для мобов и для чаров)
+     levels   - максимальное количество уровней у этого скилла
+     name     - его название
+
+ Описание скиллов:
+A)  <table name="#power"> 19 28 38 50 </table>
+ Таблица. При ссылке на параметр #power, будет браться значение, соответствующее текущему левелу скилла.
+ Таблиц может быть несколько. Значения могут быть целыми и дробными, и должны отделяться пробелами.
+ Значений должно быть столько, сколько левелов у этого скилла.
+
+B)  <set name="COMMAND" val="VALUE"/>
+
+ Обязательные параметры для каждого скилла:
+  mpConsume   - сколько маны требует
+  reuseDelay  - время перезарядки
+  target      - кто может быть целью
+  skillType   - тип скилла
+  operateType - активный, пассивный, переключаемый (toggle)
+
+ Список параметров:
+COMMAND: canLearn            - (value = "" - Этот скилл нельзя будет выучить. default - не прописывать)
+         castRange           - Радиус действия каста
+         activateRate        - VALUE
+         absorbAbs           - VALUE
+         absorbPart          - VALUE
+         advancedFlag        - true/false
+         advancedMultiplier  - VALUE
+         behind              - true/false
+         cancelable          - true/false
+         cancelTarget        - true/false
+         charge_skill_id     - skill_id для charge
+         corpse              - true/false
+         critical            - true/false
+         crush               - true/false
+         deathlink           - true/false
+         displayId           - VALUE
+         element             - VALUE
+         expPenalty          - пенальти на эксп ("0.9")
+         hitTime             - VALUE
+         hpConsume           - VALUE
+         isCubic             - true/false
+         isDwarven           - true/false
+         isMagic             - true/false
+         itemConsumeCount    - VALUE
+         itemConsumeCountInTime - VALUE
+         itemConsumeDelay    - VALUE
+         itemConsumeId       - item_id предмета, который будет использован "1458"
+         itemConsumeIdInTime - item_id предмета, который будет использован регулярно "1458"
+         itemConsumePeriods  - период за который будет идти регулярный расход предмета
+         lethal              - true/false
+         levelModifier       - VALUE
+         magicLevel          - VALUE
+         minPledgeClass      - VALUE
+         mpConsume           - VALUE
+         negateDebuffs       - true/false
+         negateEffects       - "SLEEP"
+         negateEffects       - "STUN SLEEP MUTE POISON BLEED BUFF DEBUFF PARALYZE"
+         negatePower         - VALUE
+         negateStats         - "mAtk mAtkSpd"
+         npcId               - VALUE
+         num_charges         - VALUE
+         onCrit              - true/false
+         operateType         - OP_ACTIVE/OP_PASSIVE/OP_TOGGLE
+         overHit             - true/false
+         power               - VALUE
+         reuseDelay          - VALUE
+         save                - VALUE
+         seed_any            - true/false
+         seed1               - VALUE
+         seed2               - VALUE
+         seedCount           - VALUE
+         seedcount1          - VALUE
+         skillInterrupt      - true/false
+         skillRadius         - VALUE
+         skillTime           - VALUE
+         skillType           - AGGRESSION/AIEFFECTS/BALANCE/BLEED/BUFF/CANCEL/CHARGE/CHARGEDAM/COMBATPOINTHEAL/
+ CONFUSION/CONT/CRAFT/DANCE/DEBUFF/DOT/DRAIN/DRAIN_SOUL/ENCHANT_ARMOR/ENCHANT_WEAPON/FATALBLOW/FEED_PET/FISHING/HEAL
+ HEAL_PERCENT/HOT/INTERRUPT_DISARM/LETHAL_SHOT/LUCK/MANADAM/MANAHEAL/MDAM/MDAM_ELEMENTAL/MDOT/MUTE
+ NEGATE_EFFECTS/NEGATE_STATS/NOTDONE/PARALYZE/PASSIVE/PDAM/PDAM/POISON/PUMPING/RECALL/REELING/RESURRECT
+ ROOT/SEED/SIEGEFLAG/SLEEP/SONG/SOULSHOT/SPIRITSHOT/SPOIL/STUN/SUMMON/SUMMON/SUMMON_ITEM/SWEEP/TAKECASTLE
+ TELEPORT_NPC/TURNER/UNLOCK
+         SummonItemId        - VALUE
+         SummonMinCount      - VALUE
+         target              - TARGET_ALLY/TARGET_AREA/TARGET_AREA_AIM_CORPSE/TARGET_AURA/TARGET_CORPSE/
+  TARGET_CORPSE_PLAYER/TARGET_HOLY/TARGET_ITEM/TARGET_MULTIFACE/TARGET_NONE/TARGET_ONE/TARGET_PARTY/
+  TARGET_PET/TARGET_SELF/TARGET_UNLOCKABLE
+         unaggroing          - true/false
+         undeadOnly          - true/false
+         weaponsAllowed      - VALUE
+
+C) <cond>...</cond>
+  условия для активации скилла. Не используется в пассивках. Если скилл уже активирован, а условие
+  не соответствует, он НЕ отключается. условия проверяются только для активации.
+
+  Примеры использования:
+  <cond msg="Too much hit points."><player percentHP="25"/></cond>  (будет выдаваться сообщение)
+
+  без сообщения:
+  <cond><player percentHP="25"/></cond> (25% hp)
+  или
+  <cond><player minHP="25"/></cond> (>25 hp)
+
+
+D) <for>...</for>
+  список эффектов, которые применяются при активном скилле или пассивных.
+  Пример:
+     <!-- добавить к параметру MEN значение 2. -->
+     <for>
+      <add order="0x10" stat="MEN" val="2"/>
+     </for>
+
+     <!-- умножить значение maxHP на значение взятое из таблицы Tab-maxHP и высветить иконку баффа -->
+     <for>
+       <effect count="1" name="Buff" time="1200" val="0" stackOrder="#stack" stackType="hp_up">
+         <mul order="0x50" stat="maxHp" val="#Tab-maxHp"/>
+       </effect>
+     </for>
+
+  эффекты добавляются словами:
+   <add - добавить
+   <mul - умножить
+   <set - установить
+   <sub - отнять
+   <div - разделить
+
+  order означает порядок вычисления. (order 0x08, 0x10, 0x30, 0x40, 0x50, 0x60)
+   0x08 используется для базовой установки параметра
+   0x10 используется для базовой модификации параметра
+   0x30 используется для добавления базовых бонусов к параметру
+   0x40 для прибавления статических бонусов к параметру
+   0x50 для множителей параметров
+   0x60 для прибавления статических бонусов ПОСЛЕ множителей
+
+Список изменяемых параметров:
+
+ статы:      CON
+             DEX
+             INT
+             MEN
+             STR
+             WIT
+ параметры:  accCombat
+             cAtk
+             cAtkStatic
+             hpEff
+             mAtk
+             mAtkSpd
+             maxCp
+             maxHp
+             maxLoad
+             maxMp
+             mDef
+             mpConsum
+             mpConsumePhysical
+             mpEff
+             mReuse
+             pAtk
+             pAtkRange
+             pAtkSpd
+             pDef
+             pReuse
+             rCrit
+             regCp
+             regHp
+             regMp
+             sDef
+ остальное:  absorbDam
+             breath
+             concentration
+             element
+             ExpSpMultiplier
+             poleAngle
+             rEvas
+             rShld
+             runSpd
+             shldAngle
+             transferDam
+             bighead
+ рефлекты:   reflectDam
+             reflectMagicSkill
+             reflectPhysicSkill
+ разное:     CommonRecipeLimit
+             DwarvenRecipeLimit
+             inventoryLimit
+             storageLimit
+             tradeLimit
+ рейты:      activateRate
+             blowRate
+             mCritRate
+ резисты: (для резистов использовать div/mul нельзя, только add/sub!)
+             bleedRcpt
+             bluntWpnRcpt
+             bowWpnRcpt
+             cancelRcpt
+             daggerWpnRcpt
+             debuffRcpt
+             earthRcpt
+             fearRcpt
+             fireRcpt
+             paralyzeRcpt
+             poisonRcpt
+             poleWpnRcpt
+             rootRcpt
+             sacredRcpt
+             sleepRcpt
+             stunRcpt
+             swordWpnRcpt
+             unholyRcpt
+             waterRcpt
+             windRcpt
+
+E) условия:
+ <COMMAND VARIABLE="VALUE">
+ могут быть заключены в теги <and> <or> <not>
+
+ пример:
+   <sub order="0x10" stat="STR" val="1">
+    <game night="true"/>
+   </sub>
+
+   <and>
+     <player riding="strider"/>
+     <target castledoor="true"/>
+   </and>
+
+ список команд (COMMAND):
+  <player VARIABLE="PARAM">
+          VARIABLE: race    (Undead/MagicCreatures/Beasts/Animals/Plants/Humanoids/Spirits/Angels/Demons/Dragons/Giants/Bugs/Fairies/Humans/Elves/DarkElves/Orcs/Dwarves/Others/NonLivingBeings/SiegeWeapons/DefendingArmy/Mercenaries/UnknownCreature)
+                    level
+                    resting (true/false)
+                    moving  (true/false)
+                    running (true/false)
+                    riding  (strider/wyvern/none)
+                    hp
+
+  <target VARIABLE="PARAM">
+          VARIABLE: aggro  (true/false)
+                    undead (true/false)
+                    pvp    (true/false)
+                    mob    (true/false)
+                    race   (Undead/MagicCreatures/Beasts/Animals/Plants/Humanoids/Spirits/Angels/Demons/Dragons/Giants/Bugs/Fairies/Humans/Elves/DarkElves/Orcs/Dwarves/Others/NonLivingBeings/SiegeWeapons/DefendingArmy/Mercenaries/UnknownCreature)
+                    castledoor (true/false)
+                    direction  (behind/front/side)
+
+  <using VARIABLE="PARAM">
+         VARIABLE: kind    (Shield/Sword/Blunt/Dagger/Bow/Pole/Etc/Fist/Dual Sword/Dual Fist/Big Sword/Pet/Rod)
+                   armor   (None/Light/Heavy/Magic/Pet)
+                   skill   (skill_id)
+                   slotitem
+
+  <game VARIABLE="PARAM">
+        VARIABLE: night (true/false)
+
+  <zone type="PARAM">
+        PARAM: Town,Castle,ClanHall,Fortress,OlympiadStadia,MonsterDerbyTrack,CastleDefenderSpawn,Fishing,Underground,Siege,water,battle_zone,damage,instant_skill,mother_tree,peace_zone,poison,ssq_zone,swamp,no_escape,no_landing,no_restart,no_spawn,siege_residense,dummy,offshore
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+F) Эффекты:
+
+   <effect count="1" name="Buff" time="1200" val="0" stackOrder="#stack" stackType="hp_up">
+
+count      = кол-во тиков, которые длится эффект
+time       = длина тика в секундах для этого эффекта (В примере у нас имеется один тик длинной 1200сек=20мин)
+name       = что это за эффект. У эффектов могут быть аффекты на старт, стоп и на время действия.
+val        = значение для "name"
+stackOrder = "Сила эффекта", чтобы сравнивать какой более сильный при обновлении
+stackType  = "Тип эффекта", чтобы не накладывались схожие баффы
+
+   пример: добавляется скорость атаки на 25%, но при этом отнимается mana каждые 2 тика 35 HP
+           длительность эффекта не ограничена (это у нас toggle)
+   <for>
+     <effect count="0x7fffffff" name="HealOverTime" time="2" val="-35">
+       <mul order="0x50" stat="pAtkSpd" val="1.25"/>
+     </effect>
+   </for>
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Saboteur.
+Данный хелп действителен на 12.09.2006 (сборка Fortress 3992)
+
+P.S. Особая благодарность Муркту за разъяснение многих моментов.
+

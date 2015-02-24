@@ -1,0 +1,415 @@
+﻿Commands list:
+
+	************** Group: Ride **************
+//ride - 
+//ride_strider - 
+//ride_wyvern - 
+//sr - 
+//unride - 
+//ur - 
+//wr - 
+
+	************** Group: Manor **************
+//manor - 
+//manor_disable - 
+//manor_reset - 
+//manor_save - 
+
+	************** Group: HelpPage **************
+//showhtml - 
+
+	************** Group: Skill **************
+//add_skill - 
+//get_skills - 
+//give_all_skills - 
+//remove_skill - 
+//remove_skills - 
+//reset_skills - 
+//show_effects - 
+//show_skills - 
+//skill_index - 
+//skill_list - 
+
+	************** Group: ChangeAccessLevel **************
+//changelvl - 
+
+	************** Group: ClanHall **************
+//clanhall - 
+//clanhallclosedoors - 
+//clanhalldel - 
+//clanhallopendoors - 
+//clanhallset - 
+//clanhallteleportself - 
+
+	************** Group: MonsterRace **************
+//mons - 
+
+	************** Group: Gm **************
+//gm - 
+
+	************** Group: Nochannel **************
+//nc - 
+//nochannel - 
+
+	************** Group: Scripts **************
+//scripts_reload - 
+//sqreload - 
+//sreload - 
+
+	************** Group: Debug **************
+//dump_commands - 
+//dump_mobs_aggro_info - 
+
+	************** Group: Shutdown **************
+//server_abort - 
+//server_restart - 
+//server_shutdown - 
+
+	************** Group: EditChar **************
+//add_exp_sp - 
+//add_exp_sp_to_character - 
+//character_actions - 
+//character_list - 
+//current_player - 
+//edit_character - 
+//find_character - 
+//nokarma - 
+//rec - 
+//save_modifications - 
+//setcolor - 
+//sethero - 
+//setkarma - 
+//setname - 
+//setnoble - 
+//setsex - 
+//setsubclass - 
+//settitle - 
+//show_characters - 
+//trans - 
+
+	************** Group: Camera **************
+//cinematic - 
+//freelook - 
+
+	************** Group: ThreadPool **************
+//setcore - 
+//setpool - 
+
+	************** Group: Effects **************
+//abnormal - 
+//bighead - 
+//changename - 
+//earthquake - 
+//gmspeed - 
+//invis - 
+//invul - 
+//para - 
+//para_all - 
+//setinvul - 
+//shrinkhead - 
+//social - 
+//transform - 
+//unpara - 
+//unpara_all - 
+//vis - 
+
+	************** Group: Pledge **************
+//pledge - 
+
+	************** Group: IP **************
+//charip - 
+//ipban - 
+//ipbanlist - 
+//ipblock - 
+//ipchar - 
+//ipcharban - 
+//ipunban - 
+//ipunblock - 
+
+	************** Group: RepairChar **************
+//repair - 
+//restore - 
+
+	************** Group: DoorControl **************
+//close - 
+//closeall - 
+//open - 
+//openall - 
+
+	************** Group: Kill **************
+//kill - 
+
+	************** Group: SS **************
+//ssq_change - 
+//ssq_time - 
+
+	************** Group: Shop **************
+//buy - 
+//gmshop - 
+//tax - 
+
+	************** Group: Cancel **************
+//cancel - 
+
+	************** Group: Target **************
+//target - 
+
+	************** Group: Announcements **************
+//a - 
+//add_announcement - 
+//announce - 
+//announce_announcements - 
+//announce_menu - 
+//c - 
+//crit_announce - 
+//del_announcement - 
+//list_announcements - 
+//s - 
+//toscreen - 
+
+	************** Group: Server **************
+//gc - 
+//pstat - 
+//server - 
+//test - 
+
+	************** Group: Events **************
+//events - 
+
+	************** Group: Disconnect **************
+//disconnect - 
+//kick - 
+
+	************** Group: Res **************
+//res - 
+
+	************** Group: CursedWeapons **************
+//cw_add - 
+//cw_goto - 
+//cw_info - 
+//cw_reload - 
+//cw_remove - 
+
+	************** Group: Enchant **************
+//enchant - 
+//seteb - 
+//setec - 
+//seteg - 
+//seteh - 
+//setel - 
+//seten - 
+//setes - 
+//setew - 
+//setle - 
+//setlf - 
+//setre - 
+//setrf - 
+//setun - 
+
+	************** Group: CreateItem **************
+//create_item - 
+//itemcreate - 
+
+	************** Group: Level **************
+//addlevel - 
+//setlevel - 
+
+	************** Group: Zone **************
+//active_region - 
+//loc - 
+//loc_add - 
+//loc_begin - 
+//loc_end - 
+//loc_remove - 
+//loc_reset - 
+//location - 
+//pos - 
+//region - 
+//setref - 
+//showloc - 
+//zone_check - 
+
+	************** Group: Utopia **************
+//utopia - 
+
+	************** Group: GmChat **************
+//gmchat - 
+//snoop - 
+
+	************** Group: Heal **************
+//heal - 
+
+	************** Group: Spawn **************
+//airship - 
+//enter_airship - 
+//move_airship - 
+//setai - 
+//setheading - 
+//show_spawns - 
+//spawn - 
+//spawn_index - 
+//spawn_monster - 
+//spawn1 - 
+//unspawnall - 
+
+	************** Group: Siege **************
+//add_attacker - 
+//add_defender - 
+//add_guard - 
+//castledel - 
+//clear_siege_list - 
+//endsiege - 
+//list_siege_clans - 
+//move_defenders - 
+//setcastle - 
+//siege - 
+//spawn_doors - 
+//startsiege - 
+
+	************** Group: Delete **************
+//delete - 
+
+	************** Group: Menu **************
+//ban_menu - 
+//char_manage - 
+//goto_char_menu - 
+//kick_menu - 
+//kill_menu - 
+//recall_char_menu - 
+//teleport_character_to_menu - 
+//unban_menu - 
+
+	************** Group: Polymorph **************
+//poly - 
+//polymorph - 
+//polyself - 
+//unpoly - 
+//unpolymorph - 
+//unpolyself - 
+
+	************** Group: Geodata **************
+//geo_info - 
+//geo_load - 
+//geo_los - 
+//geo_nswe - 
+//geo_type - 
+//geo_z - 
+
+	************** Group: Teleport **************
+//correct_gh - 
+//correct_gh2 - 
+//correct_merchants - 
+//correct_tvt - 
+//failed - 
+//godown - 
+//goeast - 
+//gonorth - 
+//gosouth - 
+//goup - 
+//gowest - 
+//move_to - 
+//recall - 
+//recall_npc - 
+//show_moves - 
+//show_moves_other - 
+//show_teleport - 
+//tele - 
+//teleport_character - 
+//teleport_to_character - 
+//teleportto - 
+//teleto - 
+//tonpc - 
+//walk - 
+
+	************** Group: Admin **************
+//admin - 
+//config - 
+//play_sound - 
+//play_sounds - 
+//show_html - 
+//silence - 
+//tradeoff - 
+
+	************** Group: Reload **************
+//reload - 
+//reload_abuse - 
+//reload_announcements - 
+//reload_doors - 
+//reload_fish - 
+//reload_gmaccess - 
+//reload_htm - 
+//reload_loc - 
+//reload_multisell - 
+//reload_npc - 
+//reload_pkt_logger - 
+//reload_qs - 
+//reload_qs_help - 
+//reload_shops - 
+//reload_skills - 
+//reload_spawn - 
+//reload_static - 
+//reload_translit - 
+
+	************** Group: Ban **************
+//acc_ban - 
+//acc_unban - 
+//ban - 
+//banhwid - 
+//cban - 
+//chatban - 
+//chatunban - 
+//ckarma - 
+//jail - 
+//trade_ban - 
+//trade_unban - 
+//unban - 
+//unbanhwid - 
+//unjail - 
+
+	************** Group: Mammon **************
+//find_mammon - 
+//hide_mammon - 
+//list_spawns - 
+//show_mammon - 
+
+	************** Group: Quests **************
+//quest - 
+//quests - 
+
+	************** Group: Olympiad **************
+//add_oly_points - 
+//manualhero - 
+//oly_save - 
+//oly_start - 
+
+
+==================================== Telnet commands =========================
+Комманды с аргументами имеют агрумент "?" который показывает справку по комманде
+
+version(ver) - показать версию сервера
+config(cfg) - аналог админской //config
+status(s) - статус сервера
+database(db) - статус БД
+lazyitems - включить/выключить lazyitems
+performance(p) - статус тридпулов, можно указать отдельный тридпул: packets|iopackets|general|move|npcAi|playerAi
+announce(!) - сделать аннонс
+message(msg) - послать приватное сообщение игроку
+gmlist - показать список ГМов онлайн
+gmchat - 
+tell - послать сообщение всем телнет сессиям
+whois - посмотреть инфо об игроке
+enemy - показать список сагреных мобов на чара
+baniplist(banip) - список забанненых IP, можно указать IP для того что бы его забаннить
+unbanip - разбаннить IP
+kick - кикнуть игрока
+banhwid(ban_hwid) - бан по железу
+unbanhwid(unban_hwid) - разбан по железу
+reload - перезагрузить компонент сервера: skills|npc|multisell|gmaccess|scripts|pktlogger
+shutdown - выключение сервера
+restart - рестарт сервера
+abort - отменить выключение или рестарт сервера
+stopLogin - остановить логин
+garbage(gc) - вызвать полную очистку памяти Garbage Colletor (Full GC)
+log_chat - просматривать чат
+log_tell - 
+exit, quit(q) - покинуть телнет

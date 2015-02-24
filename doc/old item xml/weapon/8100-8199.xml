@@ -1,0 +1,562 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='8102' name="Paagrian Sword Focus">
+		<for>
+			<set val='169' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8103' name="Paagrian Sword Health">
+		<for>
+			<set val='169' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8104' name="Paagrian Sword Critical Drain">
+		<for>
+			<set val='169' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<skill id='3060' level='1' chance='100' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8105' name="Guardian Sword Critical Drain">
+		<for>
+			<set val='236' order='0x08' stat='pAtk' />
+			<set val='99' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<skill id='3060' level='1' chance='100' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8106' name="Guardian Sword Health">
+		<for>
+			<set val='236' order='0x08' stat='pAtk' />
+			<set val='99' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8107' name="Guardian Sword Critical Bleed">
+		<for>
+			<set val='236' order='0x08' stat='pAtk' />
+			<set val='99' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<skill id='3055' level='1' chance='24' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8108' name="Infernal Master Haste">
+		<for>
+			<set val='259' order='0x08' stat='pAtk' />
+			<set val='107' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8109' name="Infernal Master Critical Damage">
+		<for>
+			<set val='259' order='0x08' stat='pAtk' />
+			<set val='107' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8110' name="Infernal Master Focus">
+		<for>
+			<set val='259' order='0x08' stat='pAtk' />
+			<set val='107' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8111' name="Mysterious Sword Acumen">
+		<for>
+			<set val='85' order='0x08' stat='pAtk' />
+			<set val='81' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8112' name="Mysterious Sword Magic Power">
+		<for>
+			<set val='85' order='0x08' stat='pAtk' />
+			<set val='81' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<add val='75' order='0x60' stat='mAtk' />
+			<mul val='1.15' order='0x50' stat='mpConsum' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8113' name="Mysterious Sword Magic Weakness">
+		<for>
+			<set val='85' order='0x08' stat='pAtk' />
+			<set val='81' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<skill id='1164' level='6' chance='8' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8114' name="Ecliptic Sword Empower">
+		<for>
+			<set val='125' order='0x08' stat='pAtk' />
+			<set val='111' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<add val='26' order='0x60' stat='mAtk' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8115' name="Ecliptic Sword Magic Power">
+		<for>
+			<set val='125' order='0x08' stat='pAtk' />
+			<set val='111' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<add val='112' order='0x60' stat='mAtk' />
+			<mul val='1.15' order='0x50' stat='mpConsum' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8116' name="Ecliptic Sword Magic Silence">
+		<for>
+			<set val='125' order='0x08' stat='pAtk' />
+			<set val='111' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<skill id='1064' level='1' chance='10' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8117' name="Wizards Tear Acumen">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8118' name="Wizards Tear Magic Power">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<add val='139' order='0x60' stat='mAtk' />
+			<mul val='1.15' order='0x50' stat='mpConsum' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8119' name="Wizards Tear Conversion">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8120' name="Dwarven Hammer Health">
+		<for>
+			<set val='190' order='0x08' stat='pAtk' />
+			<set val='83' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8121' name="Dwarven Hammer Anger">
+		<for>
+			<set val='190' order='0x08' stat='pAtk' />
+			<set val='83' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8122' name="Dwarven Hammer Critical Bleed">
+		<for>
+			<set val='190' order='0x08' stat='pAtk' />
+			<set val='83' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<skill id='3052' level='1' chance='42' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8123' name="Karik Horn Focus">
+		<for>
+			<set val='169' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8124' name="Karik Horn Haste">
+		<for>
+			<set val='169' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8125' name="Karik Horn Critical Drain">
+		<for>
+			<set val='169' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<skill id='3059' level='1' chance='100' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8126' name="Destroyer Hammer Health">
+		<for>
+			<set val='259' order='0x08' stat='pAtk' />
+			<set val='107' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8127' name="Destroyer Hammer Haste">
+		<for>
+			<set val='259' order='0x08' stat='pAtk' />
+			<set val='107' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8128' name="Destroyer Hammer Critical Drain">
+		<for>
+			<set val='259' order='0x08' stat='pAtk' />
+			<set val='107' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<skill id='3059' level='1' chance='100' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8129' name="Ice Storm Hammer Focus">
+		<for>
+			<set val='213' order='0x08' stat='pAtk' />
+			<set val='91' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8130' name="Ice Storm Hammer Anger">
+		<for>
+			<set val='213' order='0x08' stat='pAtk' />
+			<set val='91' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8131' name="Ice Storm Hammer Critical Bleed">
+		<for>
+			<set val='213' order='0x08' stat='pAtk' />
+			<set val='91' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<skill id='3052' level='1' chance='41' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8132' name="Star Buster Health">
+		<for>
+			<set val='236' order='0x08' stat='pAtk' />
+			<set val='99' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8133' name="Star Buster Haste">
+		<for>
+			<set val='236' order='0x08' stat='pAtk' />
+			<set val='99' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8134' name="Star Buster Risk Focus">
+		<for>
+			<set val='236' order='0x08' stat='pAtk' />
+			<set val='99' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<add val='99' order='0x40' stat='rCrit'>
+				<player percentHP="60" />
+			</add>
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8135' name="Doom Crusher Health">
+		<for>
+			<set val='282' order='0x08' stat='pAtk' />
+			<set val='114' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8136' name="Doom Crusher Anger">
+		<for>
+			<set val='282' order='0x08' stat='pAtk' />
+			<set val='114' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8137' name="Doom Crusher Risk Haste">
+		<for>
+			<set val='282' order='0x08' stat='pAtk' />
+			<set val='114' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<mul val='1.11' order='0x50' stat='pAtkSpd'>
+				<player percentHP="60" />
+			</mul>
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8138' name="ecliptic_axe_conversion">
+		<for>
+			<set val='125' order='0x08' stat='pAtk' />
+			<set val='111' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8139' name="ecliptic_axe_magic_power">
+		<for>
+			<set val='125' order='0x08' stat='pAtk' />
+			<set val='111' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<!-- SA: Magic Power -->
+			<add val='112' order='0x40' stat='mAtk' />
+			<mul val='1.15' order='0x30' stat='mpConsum' />
+		</for>
+	</item>
+	<item id='8140' name="ecliptic_axe_magic_hold">
+		<for>
+			<set val='125' order='0x08' stat='pAtk' />
+			<set val='111' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<!-- Magic Hold -->
+			<skill id='1201' level='1' chance='10' action='magic' />
+		</for>
+	</item>
+	<item id='8141' name="Spell Breaker Acumen">
+		<for>
+			<set val='140' order='0x08' stat='pAtk' />
+			<set val='122' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8142' name="Spell Breaker Magic Mental Shield">
+		<for>
+			set val='140' order='0x08' stat='pAtk'/>
+			<set val='122' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1035' level='3' chance='50' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8143' name="Spell Breaker Magic Hold">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='3577' level='1' chance='10' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8144' name="Kaim Vanul's Bones Mana Up">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8145' name="Kaim Vanul's Bones Magic Silence">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1064' level='1' chance='10' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8146' name="Kaim Vanul's Bones Conversion">
+		<for>
+			<set val='155' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8147' name="spiritual_eye_mana_up">
+		<for>
+			<set val='170' order='0x08' stat='pAtk' />
+			<set val='143' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8148' name="spiritual_eye_magic_poison">
+		<for>
+			<set val='170' order='0x08' stat='pAtk' />
+			<set val='143' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<!-- Magic Poison -->
+			<skill id='1168' level='6' chance='10' action='magic' />
+		</for>
+	</item>
+	<item id='8149' name="spiritual_eye_acumen">
+		<for>
+			<set val='170' order='0x08' stat='pAtk' />
+			<set val='143' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8150' name="flaming_dragon_skull_acumen">
+		<for>
+			<set val='186' order='0x08' stat='pAtk' />
+			<set val='152' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='8151' name="flaming_dragon_skull_magic_power">
+		<for>
+			<set val='186' order='0x08' stat='pAtk' />
+			<set val='152' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<!-- SA: Magic Power -->
+			<add val='167' order='0x40' stat='mAtk' />
+			<mul val='1.15' order='0x30' stat='mpConsum' />
+		</for>
+	</item>
+	<item id='8152' name="flaming_dragon_skull_magic_silence">
+		<for>
+			<set val='186' order='0x08' stat='pAtk' />
+			<set val='152' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<!-- Magic Silence -->
+			<skill id='1064' level='1' chance='10' action='magic' />
+		</for>
+	</item>
+	<item id='8190' name="Demonic Sword Zariche">
+		<for>
+			<set val='361' order='0x08' stat='pAtk' />
+			<set val='137' order='0x08' stat='mAtk' />
+			<set val='12' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<skill id='3630' level='1' chance='0' action='add' />
+			<skill id='3631' level='1' chance='0' action='add' />
+		</for>
+	</item>
+</list>

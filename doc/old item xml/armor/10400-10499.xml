@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='10416' name="Red Talisman - Explosion">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10417' name="Red Talisman - Magic Explosion Power">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10418' name="White Talisman - Storm">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10419' name="White Talisman - Darkness">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10420' name="White Talisman - Water">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10421' name="White Talisman - Fire">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10422' name="White Talisman - Light">
+		<for>
+			<add val='0' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10470' name="Shadow Item - Red Crescent">
+		<for>
+			<add val='24' order='0x10' stat='mDef' />
+			<enchant val='0' order='0x0C' stat='mDef' />
+		</for>
+	</item>
+	<item id='10471' name="Shadow Item - Ring of Devotion">
+		<for>
+			<add val='16' order='0x10' stat='mDef' />
+			<enchant val='0' order='0x0C' stat='mDef' />
+		</for>
+	</item>
+	<item id='10472' name="Shadow Item - Necklace of Devotion">
+		<for>
+			<add val='32' order='0x10' stat='mDef' />
+			<enchant val='0' order='0x0C' stat='mDef' />
+		</for>
+	</item>
+	<item id='10487' name="Dynasty Jeweled Leather Armor Force Master">
+		<for>
+			<add val='170' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10488' name="Dynasty Jeweled Leather Armor Weapon Master">
+		<for>
+			<add val='170' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10489' name="Dynasty Jeweled Leather Armor Enchanter">
+		<for>
+			<add val='170' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10490' name="Dynasty Jeweled Leather Armor Summoner">
+		<for>
+			<add val='170' order='0x10' stat='pDef' />
+		</for>
+	</item>
+	<item id='10491' name="Silk Shirt - HP">
+		<for>
+			<add val='17' order='0x10' stat='pDef' />
+			<add val='62' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10491;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10492' name="Silk Shirt - MP">
+		<for>
+			<add val='17' order='0x10' stat='pDef' />
+			<add val='30' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10492;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10493' name="Silk Shirt - CP">
+		<for>
+			<add val='17' order='0x10' stat='pDef' />
+			<add val='188' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10493;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10494' name="Thin Leather Shirt - HP">
+		<for>
+			<add val='21' order='0x10' stat='pDef' />
+			<add val='93' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10494;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10495' name="Thin Leather Shirt - MP">
+		<for>
+			<add val='21' order='0x10' stat='pDef' />
+			<add val='46' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10495;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10496' name="Thin Leather Shirt - CP">
+		<for>
+			<add val='21' order='0x10' stat='pDef' />
+			<add val='282' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10496;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10497' name="Scale Shirt - HP">
+		<for>
+			<add val='23' order='0x10' stat='pDef' />
+			<add val='183' order='0x10' stat='maxHp'>
+				<and>
+					<using slotitem="10497;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10498' name="Scale Shirt - MP">
+		<for>
+			<add val='23' order='0x10' stat='pDef' />
+			<add val='89' order='0x10' stat='maxMp'>
+				<and>
+					<using slotitem="10498;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+	<item id='10499' name="Scale Shirt - CP">
+		<for>
+			<add val='23' order='0x10' stat='pDef' />
+			<add val='561' order='0x10' stat='maxCp'>
+				<and>
+					<using slotitem="10499;0;4" />
+				</and>
+			</add>
+			<enchant val='0' order='0x0C' stat='pDef' />
+		</for>
+	</item>
+</list>

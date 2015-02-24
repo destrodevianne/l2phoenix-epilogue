@@ -1,0 +1,3 @@
+update npc set mp = greatest(mp,hp/2) WHERE `type` NOT IN ('L2CastleTeleporter','L2CabaleBuffer','RoyalRushTeleporter','L2CastleBlacksmith','L2ClanHallManager','L2Pet','L2TamedBeast','L2FortressManager','L2CastleChamberlain');
+update npc set base_mp_regen = (.87 + npc.level * .03) WHERE `type` NOT IN ('L2CastleTeleporter','L2CabaleBuffer','RoyalRushTeleporter','L2CastleBlacksmith','L2ClanHallManager','L2Pet','L2TamedBeast','L2FortressManager','L2CastleChamberlain');
+update npc set mp=152641, base_mp_regen=300 where type='L2FortressManager' or type='L2CastleChamberlain';

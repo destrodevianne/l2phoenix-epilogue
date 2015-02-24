@@ -1,0 +1,50 @@
+-- EXP/SP
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp, n.sp = m.sp where m.xp > 0 and s.level is null ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp, n.sp = m.sp where m.xp > 0 and s.level = 1 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 1.2, n.sp = m.sp / 1.2 where m.xp > 0 and s.level = 2 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 1.3, n.sp = m.sp / 1.3 where m.xp > 0 and s.level = 3 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 2, n.sp = m.sp / 2 where m.xp > 0 and s.level = 4 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 2, n.sp = m.sp / 2 where m.xp > 0 and s.level = 5 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 4, n.sp = m.sp / 4 where m.xp > 0 and s.level = 6 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 4, n.sp = m.sp / 4 where m.xp > 0 and s.level = 7 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 0.25, n.sp = m.sp / 0.25 where m.xp > 0 and s.level = 8 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 0.5, n.sp = m.sp / 0.5 where m.xp > 0 and s.level = 9 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 2, n.sp = m.sp / 2 where m.xp > 0 and s.level = 10 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 3, n.sp = m.sp / 3 where m.xp > 0 and s.level = 11 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 4, n.sp = m.sp / 4 where m.xp > 0 and s.level = 12 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 5, n.sp = m.sp / 5 where m.xp > 0 and s.level = 13 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 6, n.sp = m.sp / 6 where m.xp > 0 and s.level = 14 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 7, n.sp = m.sp / 7 where m.xp > 0 and s.level = 15 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 8, n.sp = m.sp / 8 where m.xp > 0 and s.level = 16 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 9, n.sp = m.sp / 9 where m.xp > 0 and s.level = 17 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 10, n.sp = m.sp / 10 where m.xp > 0 and s.level = 18 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 11, n.sp = m.sp / 11 where m.xp > 0 and s.level = 19 ;
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.exp = m.xp / 12, n.sp = m.sp / 12 where m.xp > 0 and s.level = 20 ;
+update npc set sp = exp / 10 where sp = 0 and exp > 0 ;
+
+-- HP
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp where m.hp > 0 and s.level is null and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp where m.hp > 0 and s.level = 1 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 1.2 where m.hp > 0 and s.level = 2 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 1.3 where m.hp > 0 and s.level = 3 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 2 where m.hp > 0 and s.level = 4 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 2 where m.hp > 0 and s.level = 5 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 4 where m.hp > 0 and s.level = 6 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 4 where m.hp > 0 and s.level = 7 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 0.25 where m.hp > 0 and s.level = 8 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 0.5 where m.hp > 0 and s.level = 9 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 2 where m.hp > 0 and s.level = 10 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 3 where m.hp > 0 and s.level = 11 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 4 where m.hp > 0 and s.level = 12 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 5 where m.hp > 0 and s.level = 13 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 6 where m.hp > 0 and s.level = 14 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 7 where m.hp > 0 and s.level = 15 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 8 where m.hp > 0 and s.level = 16 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 9 where m.hp > 0 and s.level = 17 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 10 where m.hp > 0 and s.level = 18 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 11 where m.hp > 0 and s.level = 19 and n.type <> "L2Pet";
+update npc n left join mobs m on n.id = m.id left join npcskills s on s.npcid = n.id and s.skillid = 4408 set n.hp = m.hp / 12 where m.hp > 0 and s.level = 20 and n.type <> "L2Pet";
+
+-- Herbs
+update npc n left join mobs m on n.id = m.id set n.isDropHerbs = 'true' where m.herb = 1 ;
+update npc n left join mobs m on n.id = m.id set n.isDropHerbs = 'false' where m.herb = 0 ;

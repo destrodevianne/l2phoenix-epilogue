@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='6724' name="Sealed Tateossian Earring">
+		<for>
+			<add val='68' order='0x10' stat='mDef' />
+			<enchant val='0' order='0x0C' stat='mDef' />
+		</for>
+	</item>
+	<item id='6725' name="Sealed Tateossian Ring">
+		<for>
+			<add val='46' order='0x10' stat='mDef' />
+			<enchant val='0' order='0x0C' stat='mDef' />
+		</for>
+	</item>
+	<item id='6726' name="Sealed Tateossian Necklace">
+		<for>
+			<add val='91' order='0x10' stat='mDef' />
+			<enchant val='0' order='0x0C' stat='mDef' />
+		</for>
+	</item>
+</list>

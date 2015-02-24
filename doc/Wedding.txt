@@ -1,0 +1,27 @@
+﻿Wedding System:
+its 2 parted
+First part "engage"
+
+1) target the player that you want to make a couple with
+2) enter .engage
+3) if player has you on friendlist popup will apppear
+============
+ok / cancel
+
+and a systemsg that you wanna engage
+
+4) if player accepts you are engaged, gratulations
+
+Second part "marriage"
+
+1) if youre engaged go to a l2weddingmanager and ask for marriage (Andromeda name)
+2) your partner goes to the npc and confirms
+3) fireworks,wedding marchs and your are married Smile
+
+you can use .gotolove to port to your partner if youre married (teleport time and price adjustable)
+
+if you wanna cancel your engagement / marriage enter .divorce
+if youre married you have to pay a adjustable amount of adena to your partner
+
+when you try to engage or marry someone and you have already a partner you get a bighead + debuff
+formal wear,price,same sex marriage and more is adjustable in the config files

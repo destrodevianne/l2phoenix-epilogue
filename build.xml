@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L2_Phoenix" default="dist" basedir=".">
+	<description> Boston, MA
+		02111-1307, USA.
+
+		http://www.gnu.org/copyleft/gpl.html
+
+	</description>
+
+	<property name="src" location="java"/>
+	<property name="lib" location="lib"/>
+	<property name="build" location="build"/>
+	<property name="build.classes" location="${build}/classes"/>
+	<property name="build.scripts" location="${build}/scripts"/>
+	<property name="build.dist" location="${build}/dist"/>
+	<property name="build.dist.login" location="${build.dist}/login"/>
+	<property name="build.dist.game" location="${build.dist}/gameserver"/>
+
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="c3p0-0.9.1.2.jar"/>
+			<include name="javolution.jar"/>
+			<include name="commons-logging.jar"/>
+			<include name="jce.jar"/>
+			<include name="rrd4j-2.0.5.jar"/>
+			<include name="mysql-connector-java-bin.jar"/>
+			<include name="tools.jar"/>
+			<include name="jacksum.jar"/>
+			<include name="l2pserver.jar"/>
+		</fileset>
+	</path>
+
+	<target name="clean"
+			description="Remove the output directories">
+
+		<delete><fileset dir="${build}"/></delete>
+	</target>
+
+	<target name="clean_scripts"
+			description="Remove the scripts output directories">
+
+		<delete dir="${build.scripts}"/>
+		<delete file="${build}/scripts.jar"/>
+		<delete file="${build.dist.game}/scripts.jar"/>
+	</target>
+
+	<target name="cc"
+			description="Remove the classes directories">
+
+		<delete dir="${build}/classes"/>
+	</target>
+
+	<target name="init"
+			description="Create the output directories.">
+
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build.classes}"/>
+		<mkdir dir="${build.dist}" />
+		<mkdir dir="${build.dist.login}" />
+		<mkdir dir="${build.dist.game}" />
+	</target>
+
+	<target name="compile"
+			depends="init"
+			description="Compile the source.">
+
+		<javac destdir="${build.classes}"
+			   optimize="on"
+			   debug="on"
+			   source="1.6"
+			   target="1.6"
+			   encoding="UTF-8"
+			   includeantruntime="false"
+			   nowarn="off">
+			<compilerarg value="-Xlint:all"></compilerarg>
+			<src path="${src}"/>
+			<classpath refid="classpath"/>
+		</javac>
+
+	</target>
+
+	<target name="compile_scripts"
+			depends="jar"
+			description="Compile the source.">
+
+		<copy todir="${lib}">
+			<fileset dir="${build}">
+				<include name="l2pserver.jar"/>
+			</fileset>
+		</copy>
+
+		<mkdir dir="${build.scripts}"/>
+		<javac destdir="${build.scripts}"
+			   optimize="on"
+			   debug="on"
+			   source="1.6"
+			   target="1.6"
+			   encoding="UTF-8"
+			   includeantruntime="false"
+			   nowarn="off">
+			<compilerarg value="-Xlint:all"></compilerarg>
+			<src path="data"/>
+			<classpath refid="classpath"/>
+		</javac>
+
+		<delete file="${lib}/l2pserver.jar"/>
+	</target>
+
+	<target name="debug"
+			depends="init"
+			description="Compile the source with debug info.">
+
+		<javac destdir="${build.classes}"
+			   optimize="off"
+			   debug="on"
+			   source="1.5"
+			   target="1.5"
+			   encoding="UTF-8"
+			   includeantruntime="false"
+			   nowarn="off">
+			<compilerarg value="-Xlint:all"></compilerarg>
+			<src path="${src}"/>
+			<classpath refid="classpath"/>
+		</javac>
+	</target>
+
+	<target name="jar"
+			depends="clean,compile"
+			description="Create the jar file">
+
+		<exec dir="." executable="svnversion" outputproperty="l2p.revision"
+			  failifexecutionfails="false">
+			<arg line="-n ."/>
+		</exec>
+
+		<tstamp>
+			<format property="build.tstamp"
+					pattern="yyyy.MM.dd HH:mm"/>
+		</tstamp>
+
+		<concat destfile="${build.dist.game}/config/l2p-version.properties">
+			version=${l2p.revision}
+			builddate=${build.tstamp}
+		</concat>
+
+		<concat destfile="${build}/classes/l2p/l2p-version.properties">
+			version=${l2p.revision}
+			builddate=${build.tstamp}
+			user=${user.name} ${user.dir} ${user.timezone}
+			os=${os.name} ${os.version} ${os.arch}
+			java=${java.version} ${java.vendor}
+			vm=${java.vm.name} ${java.vm.version}
+		</concat>
+
+		<jar destfile="${build}/l2pserver.jar" level="0">
+			<fileset dir="${build.classes}"/>
+			<manifest>
+				<attribute name="Main-Class" value="l2p.Server"/>
+				<attribute name="Class-Path" value=". c3p0-0.9.1.2.jar jacksum.jar mysql-connector-java-bin.jar javolution.jar commons-logging.jar tools.jar"/>
+			</manifest>
+		</jar>
+
+		<copy todir="${build.dist.login}" preservelastmodified="true">
+			<fileset dir="${build}">
+				<include name="l2pserver.jar"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist.game}" preservelastmodified="true">
+			<fileset dir="${build}">
+				<include name="l2pserver.jar"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="jar_scripts"
+			depends="clean_scripts,compile_scripts"
+			description="Create the scripts jar file">
+
+		<jar destfile="${build}/scripts.jar" level="0">
+			<fileset dir="${build.scripts}"/>
+			<manifest>
+				<attribute name="Class-Path" value=". c3p0-0.9.1.2.jar jacksum.jar mysql-connector-java-bin.jar javolution.jar commons-logging.jar tools.jar l2jserver.jar"/>
+			</manifest>
+		</jar>
+
+		<copy todir="${build.dist.game}" preservelastmodified="true">
+			<fileset dir="${build}">
+				<include name="scripts.jar"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="compile.gcj"
+			depends="jar"
+			description="Build machine executable binary">
+
+		<exec dir="." executable="gcj" failifexecutionfails="false" os="linux:Linux:freebsd:FreeBSD" >
+			<arg line="-O3 ${build.dist}/l2pserver.jar -o ${build.dist}/l2pserver --main=l2p.Server jbforth.jar"/>
+		</exec>
+	</target>
+
+	<target name="dist_common" depends="jar">
+		<copy todir="${build.dist}" preservelastmodified="true">
+			<fileset dir="${basedir}">
+				<include name="changes.txt"/>
+				<include name="LICENSE.txt"/>
+				<include name="README.txt"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist.login}" preservelastmodified="true">
+			<fileset dir="${src}/../lib">
+				<include name="c3p0-0.9.1.2.jar"/>
+				<include name="mysql-connector-java-bin.jar"/>
+				<include name="javolution.jar"/>
+				<include name="jce.jar"/>
+				<include name="jacksum.jar"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist.login}" preservelastmodified="true">
+			<fileset dir="${src}">
+				<include name="startAccountManager.*"/>
+				<include name="startSQLAccountManager.*"/>
+				<include name="LoginServer_loop.sh"/>
+				<include name="StartLoginServer.*"/>
+				<include name="RegisterGameServer.*"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist.game}" preservelastmodified="true">
+			<fileset dir="${src}/../lib">
+				<include name="*.jar"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist.game}" preservelastmodified="true">
+			<fileset dir="${src}">
+				<include name="GameServer_loop.sh"/>
+				<include name="StartGameServer.*"/>
+			</fileset>
+		</copy>
+
+		<mkdir dir="${build.dist.game}/backup" />
+		<mkdir dir="${build.dist.login}/backup" />
+
+		<mkdir dir="${build.dist.game}/log" />
+		<mkdir dir="${build.dist.login}/log" />
+
+		<mkdir dir="${build.dist.game}/config" />
+		<mkdir dir="${build.dist.game}/config/defaults" />
+		<copy todir="${build.dist.game}/config" preservelastmodified="true">
+			<fileset dir="java/config">
+				<include name="l2p-version.properties"/>
+			</fileset>
+		</copy>
+		<copy todir="${build.dist.game}/config/defaults" preservelastmodified="true">
+			<fileset dir="java/config">
+				<include name="*.properties"/>
+				<include name="*.xml"/>
+				<include name="*.cfg"/>
+				<include name="*.txt"/>
+				<include name="fake_players.list" />
+				<exclude name="loginserver.properties" />
+				<exclude name="login_telnet.properties" />
+				<exclude name="l2p-version.properties" />
+			</fileset>
+		</copy>
+
+		<mkdir dir="${build.dist.game}/config/GMAccess.d"/>
+		<mkdir dir="${build.dist.game}/config/GMAccess.d/template"/>
+		<mkdir dir="${build.dist.game}/config/defaults/GMAccess.d"/>
+		<mkdir dir="${build.dist.game}/config/defaults/GMAccess.d/template"/>
+		<copy todir="${build.dist.game}/config/GMAccess.d/template" preservelastmodified="true">
+			<fileset dir="java/config/GMAccess.d/template">
+				<include name="*.xml"/>
+			</fileset>
+		</copy>
+		<copy todir="${build.dist.game}/config/defaults/GMAccess.d/template" preservelastmodified="true">
+			<fileset dir="java/config/GMAccess.d/template">
+				<include name="*.xml"/>
+			</fileset>
+		</copy>
+
+		<mkdir dir="${build.dist.login}/config" />
+		<mkdir dir="${build.dist.login}/config/defaults" />
+		<copy todir="${build.dist.login}/config/defaults" preservelastmodified="true">
+			<fileset dir="java/config">
+				<include name="loginserver.properties"/>
+				<include name="login_telnet.properties"/>
+				<include name="log.properties"/>
+				<include name="console.cfg"/>
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist.login}" preservelastmodified="true">
+			<fileset dir="data">
+				<include name="servername.xml"/>
+			</fileset>
+		</copy>
+
+		<mkdir dir="${build.dist.game}/data" />
+		<copy todir="${build.dist.game}/data" preservelastmodified="true">
+			<fileset dir="data">
+				<include name="**/*.*"/>
+				<exclude name="scripts/**/*.java"/>
+			</fileset>
+		</copy>
+
+		<fixcrlf 	srcdir="${build.dist.game}"
+					 eol="lf"
+					 eof="remove"
+					 includes="**/*.sh">
+		</fixcrlf>
+
+		<fixcrlf 	srcdir="${build.dist.login}"
+					 eol="lf"
+					 eof="remove"
+					 includes="**/*.sh">
+		</fixcrlf>
+
+		<fixcrlf 	srcdir="${build.dist.game}"
+					 eol="crlf"
+					 eof="remove"
+					 includes="**/*.bat">
+		</fixcrlf>
+
+		<fixcrlf 	srcdir="${build.dist.login}"
+					 eol="crlf"
+					 eof="remove"
+					 includes="**/*.bat">
+		</fixcrlf>
+
+		<mkdir dir="${build.dist}/sql"/>
+		<copy todir="${build.dist}/sql" preservelastmodified="true">
+			<fileset dir="sql">
+				<include name="**/*.*"/>
+			</fileset>
+		</copy>
+		<mkdir dir="${build.dist.game}/geodata"/>
+		<copy todir="${build.dist.game}/geodata/" preservelastmodified="true">
+			<fileset dir="geodata">
+				<include name="**/*.*"/>
+			</fileset>
+		</copy>
+		<mkdir dir="${build.dist.game}/webserver"/>
+		<copy todir="${build.dist.game}/webserver" preservelastmodified="true">
+			<fileset dir="webserver">
+				<include name="**/*.*"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="dist" depends="dist_common">
+		<copy todir="${build.dist.game}/data" preservelastmodified="true">
+			<fileset dir="data">
+				<include name="scripts/**/*.java"/>
+			</fileset>
+		</copy>
+
+		<!--
+		Compress with 7-Zip:
+		<exec executable="C:/Program Files/7-Zip/7z.exe" failifexecutionfails="true" outputproperty="sevenzip_output">
+			<arg line="a -aoa -mx9 ${build}/l2p-server.7z ${build.dist}/*"/>
+		</exec>
+
+		Compress with WinRAR:
+		<exec executable="C:/Program Files/WinRAR/rar.exe" failifexecutionfails="true" outputproperty="rar_output">
+			<arg line="a -m5 -mt2 -s -ri1 -tl -r -ep1 ${build}/l2p-server.rar ${build.dist}/*"/>
+		</exec>
+		-->
+
+		<zip destfile="${build}/l2p-server.zip"
+			 basedir="${build.dist}" />
+	</target>
+
+	<target name="with_jarscripts" depends="jar_scripts,dist_common">
+		<zip destfile="${build}/l2p-server.zip"
+			 basedir="${build.dist}" />
+	</target>
+</project>

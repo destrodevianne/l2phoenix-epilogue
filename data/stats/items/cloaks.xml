@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='13690' name="Knight's Cloak - Kamael exclusive">
+		<cond msg="Only for Kamael.">
+			<player race="kamael" />
+		</cond>
+	</item>
+	<item id='13889' name="Holy Spirit's Cloak - Kamael exclusive">
+		<cond msg="Only for Kamael.">
+			<player race="kamael" />
+		</cond>
+	</item>
+	<item id='14601' name="Ancient Cloak - Kamael exclusive">
+		<cond msg="Only for Kamael.">
+			<player race="kamael" />
+		</cond>
+	</item>
+</list>

@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='6600' name="Saint Spear Guidance">
+		<for>
+			<set val='281' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='-3.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6601' name="Saint Spear Haste">
+		<for>
+			<set val='281' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='-3.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6602' name="Demon Splinter Focus">
+		<for>
+			<set val='342' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6603' name="Demon Splinter Health">
+		<for>
+			<set val='342' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6604' name="Demon Splinter Crt. Stun">
+		<for>
+			<set val='342' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<skill id='3070' level='1' chance='25' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6605' name="Heavens Divider Haste">
+		<for>
+			<set val='342' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6606' name="Heavens Divider Health">
+		<for>
+			<set val='342' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6607' name="Heavens Divider Focus">
+		<for>
+			<set val='342' order='0x08' stat='pAtk' />
+			<set val='132' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6608' name="Arcana Mace Acumen">
+		<for>
+			<set val='225' order='0x08' stat='pAtk' />
+			<set val='175' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6609' name="Arcana Mace MP Regeneration">
+		<for>
+			<set val='225' order='0x08' stat='pAtk' />
+			<set val='175' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<mul val='1.1' order='0x50' stat='regMp' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6610' name="Arcana Mace Mana Up">
+		<for>
+			<set val='279' order='0x08' stat='pAtk' />
+			<set val='175' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='6611' name="Infinity Blade">
+		<for>
+			<set val='379' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<mul val='1.33' order='0x30' stat='rShld' />
+			<mul val='1.09' order='0x30' stat='reflectDam' />
+			<skill id='3579' level='1' chance='4' action='crit' />
+		</for>
+	</item>
+	<item id='6612' name="Infinity Cleaver">
+		<for>
+			<set val='461' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<add val='504' order='0x40' stat='cAtk' />
+			<add val='78.7' order='0x40' stat='rCrit' />
+			<add val="10" order="0x40" stat="reflectPhysicSkill" />
+			<add val="10" order="0x40" stat="reflectMagicSkill" />
+		</for>
+	</item>
+	<item id='6613' name="Infinity Axe">
+		<for>
+			<set val='379' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.39' order='0x30' stat='rShld' />
+			<mul val='1.09' order='0x30' stat='reflectDam' />
+			<skill id='3581' level='1' chance='5' action='crit' />
+		</for>
+	</item>
+	<item id='6614' name="Infinity Rod">
+		<for>
+			<set val='303' order='0x08' stat='pAtk' />
+			<set val='226' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<mul val='1.15' order='0x30' stat='mAtkSpd' />
+			<add val='0.51' order='0x40' stat='regMp' />
+			<skill id='3598' level='1' chance='3' action='magic' />
+		</for>
+	</item>
+	<item id='6615' name="Infinity Crusher">
+		<for>
+			<set val='461' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<mul val='1.07' order='0x30' stat='pAtkSpd' />
+			<add val="10" order="0x40" stat="reflectPhysicSkill" />
+			<add val="10" order="0x40" stat="reflectMagicSkill" />
+			<skill id='3584' level='1' chance='25' action='crit' />
+		</for>
+	</item>
+	<item id='6616' name="Infinity Scepter">
+		<for>
+			<set val='369' order='0x08' stat='pAtk' />
+			<set val='226' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<add val='29.67' order='0x40' stat='mAtk' />
+			<mul val='1.54' order='0x30' stat='mCritRate' />
+			<skill id='3596' level='1' chance='3' action='magic' />
+		</for>
+	</item>
+	<item id='6617' name="Infinity Stinger">
+		<for>
+			<set val='332' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='12' order='0x08' stat='rCrit' />
+			<add val='-3' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<mul val='1.03' order='0x30' stat='pAtkSpd' />
+			<add val='0.51' order='0x40' stat='regMp' />
+			<add order='0x40' stat='cAtk' val='220'>
+				<and>
+					<target direction="behind" />
+				</and>
+			</add>
+			<mul val='1.02' order='0x30' stat='absorbDam' />
+			<skill id='3590' level='1' chance='5' action='crit' />
+		</for>
+	</item>
+	<item id='6618' name="Infinity Fang">
+		<for>
+			<set val='461' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<add val='3.15' order='0x40' stat='rEvas' />
+			<skill id='3588' level='1' chance='25' action='crit' />
+		</for>
+	</item>
+	<item id='6619' name="Infinity Bow">
+		<for>
+			<set val='707' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='12' order='0x08' stat='rCrit' />
+			<add val='-3' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<skill id='3594' level='1' chance='7' action='crit' />
+		</for>
+	</item>
+	<item id='6620' name="Infinity Wing">
+		<for>
+			<set val='461' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='0' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.30' order='0x30' stat='maxMp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<add val='78.7' order='0x40' stat='rCrit' />
+			<add val="10" order="0x40" stat="reflectPhysicSkill" />
+			<add val="10" order="0x40" stat="reflectMagicSkill" />
+			<skill id='3586' level='1' chance='10' action='crit' />
+		</for>
+	</item>
+	<item id='6621' name="Infinity Spear">
+		<for>
+			<set val='379' order='0x08' stat='pAtk' />
+			<set val='169' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<set val='66' order='0x08' stat='pAtkRange' />
+			<add val='-3' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<mul val='1.25' order='0x30' stat='maxHp' />
+			<mul val='1.50' order='0x30' stat='maxCp' />
+			<mul val='1.07' order='0x30' stat='pAtkSpd' />
+			<add val='4.89' order='0x40' stat='accCombat' />
+			<skill id='3592' level='1' chance='10' action='crit' />
+			<add val="10" order="0x40" stat="reflectPhysicSkill" />
+			<add val="10" order="0x40" stat="reflectMagicSkill" />
+		</for>
+	</item>
+	<item id='6678' name="sealed_imperial_crusader_shield">
+		<for>
+			<sub val='8' order='0x10' stat='rEvas' />
+			<set val='276' order='0x08' stat='sDef' />
+			<set val='20' order='0x08' stat='rShld' />
+			<enchant val='0' order='0x0C' stat='sDef' />
+		</for>
+	</item>
+</list>

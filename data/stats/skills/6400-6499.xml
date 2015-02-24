@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="6464" levels="1" name="Three Siblings' Trickery" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "By the three sibling's trickery, Max HP/MP/CP are increased by 40% for 10 seconds."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6465" levels="1" name="Jack O'Lantern Card" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6466" levels="1" name="Rotten Jack O'Lantern Card" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6467" levels="1" name="Jack O'Lantern Card - Confirm Skill" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6468" levels="1" name="Rotten Jack O'Lantern Card - Confirm Skill" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6469" levels="1" name="Halloween Defeat" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6470" levels="1" name="1 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6471" levels="1" name="2 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6472" levels="1" name="3 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6473" levels="1" name="4 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6474" levels="1" name="5 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6475" levels="1" name="6 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6476" levels="1" name="7 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6477" levels="1" name="8 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6478" levels="1" name="9 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6479" levels="1" name="10 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6480" levels="1" name="11 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6481" levels="1" name="12 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6482" levels="1" name="13 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6483" levels="1" name="14 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6484" levels="1" name="15 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6485" levels="1" name="16 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6486" levels="1" name="17 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6487" levels="1" name="18 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6488" levels="1" name="19 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6489" levels="1" name="20 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6490" levels="1" name="Jack's game - Gauge" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+	<skill id="6491" levels="1" name="Jack's game - Target" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for />
+	</skill>
+</list>

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<item id='7701' name="Stick of Faith Mana Up">
+		<for>
+			<set val='85' order='0x08' stat='pAtk' />
+			<set val='81' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7702' name="Stick of Faith Magic Hold">
+		<for>
+			<set val='85' order='0x08' stat='pAtk' />
+			<set val='81' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='3577' level='1' chance='10' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7703' name="Stick of Faith Magic Shield">
+		<for>
+			<set val='85' order='0x08' stat='pAtk' />
+			<set val='81' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1035' level='2' chance='50' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7704' name="Stick of Eternity Empower">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<add val='24' order='0x60' stat='mAtk' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7705' name="Stick of Eternity Rsk.,Evasion">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+			<add val='7' order='0x40' stat='rEvas'>
+				<player percentHP="60" />
+			</add>
+		</for>
+	</item>
+	<item id='7706' name="Stick of Eternity Bless the Body">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1045' level='3' chance='20' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7707' name="Nirvana Axe Magic Power">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<add val='99' order='0x60' stat='mAtk' />
+			<mul val='1.15' order='0x50' stat='mpConsum' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7708' name="Nirvana Axe Magic Poison">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1168' level='6' chance='7' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7709' name="Nirvana Axe Magic Weakness">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1164' level='6' chance='7' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7710' name="Club of Nature Acumen">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7711' name="Club of Nature Magic Mental Shield">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1035' level='3' chance='50' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7712' name="Club of Nature Magic Magic Hold">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='3577' level='1' chance='10' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7713' name="Mace of The Underworld Mana Up">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7714' name="Mace of The Underworld Magic Silence">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1064' level='1' chance='10' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7715' name="Mace of The Underworld Conversion">
+		<for>
+			<set val='111' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7716' name="Inferno Staff Acumen">
+		<for>
+			<set val='135' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7717' name="Inferno Staff Magic Silence">
+		<for>
+			<set val='135' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1064' level='1' chance='10' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7718' name="Inferno Staff Magic Paralyze">
+		<for>
+			<set val='135' order='0x08' stat='pAtk' />
+			<set val='101' order='0x08' stat='mAtk' />
+			<set val='4' order='0x08' stat='rCrit' />
+			<add val='4.75' order='0x10' stat='accCombat' />
+			<skill id='1170' level='1' chance='5' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7719' name="Poleaxe Critical Stun">
+		<for>
+			<set val='139' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='-3.75' order='0x10' stat='accCombat' />
+			<skill id='3070' level='1' chance='25' action='crit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7720' name="Poleaxe Long Blow">
+		<for>
+			<set val='139' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='-3.75' order='0x10' stat='accCombat' />
+			<add val='40' order='0x20' stat='pAtkRange' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7721' name="Poleaxe Wide Blow">
+		<for>
+			<set val='139' order='0x08' stat='pAtk' />
+			<set val='76' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<add val='-3.75' order='0x10' stat='accCombat' />
+			<add val='20' order='0x40' stat='poleAngle' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7722' name="Sword of Valhalla Acumen">
+		<for>
+			<set val='140' order='0x08' stat='pAtk' />
+			<set val='122' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7723' name="Sword of Valhalla Magic Weakness">
+		<for>
+			<set val='140' order='0x08' stat='pAtk' />
+			<set val='122' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<skill id='1164' level='6' chance='7' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+	<item id='7724' name="Sword of Valhalla Magic Regeneration">
+		<for>
+			<set val='140' order='0x08' stat='pAtk' />
+			<set val='122' order='0x08' stat='mAtk' />
+			<set val='8' order='0x08' stat='rCrit' />
+			<skill id='1044' level='3' chance='30' action='magic' />
+			<enchant val='0' order='0x0C' stat='pAtk' />
+			<enchant val='0' order='0x0C' stat='mAtk' />
+		</for>
+	</item>
+</list>
